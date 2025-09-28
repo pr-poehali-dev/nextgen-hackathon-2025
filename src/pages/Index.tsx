@@ -195,7 +195,7 @@ const Index = () => {
                 { value: timeLeft.minutes, label: 'минут' },
                 { value: timeLeft.seconds, label: 'секунд' }
               ].map((item, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur border-border/50">
+                <Card key={index} className="bg-white/90 backdrop-blur border-purple-300/50 shadow-lg">
                   <CardContent className="p-4 text-center">
                     <div className="text-2xl font-rubik font-bold text-primary">{item.value}</div>
                     <div className="text-xs text-muted-foreground">{item.label}</div>
@@ -250,7 +250,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-primary/30 transition-all duration-300">
+            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-primary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Target" className="text-primary text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-white">Цели</CardTitle>
@@ -265,7 +265,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-secondary/30 transition-all duration-300">
+            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-secondary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Award" className="text-secondary text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-white">Призы</CardTitle>
@@ -280,7 +280,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-accent/30 transition-all duration-300">
+            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-accent/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Users2" className="text-accent text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-white">Команды</CardTitle>
@@ -312,7 +312,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {tracks.map((track) => (
-              <Card key={track.id} className={`bg-card/50 backdrop-blur border-2 ${track.borderColor} hover:${track.bgColor} transition-all duration-300 group`}>
+              <Card key={track.id} className={`bg-white/90 backdrop-blur border-2 ${track.borderColor} hover:${track.bgColor} transition-all duration-300 group shadow-lg`}>
                 <CardHeader className="text-center">
                   <Icon name={track.icon as any} className={`${track.color} text-4xl mb-3 mx-auto group-hover:animate-float`} />
                   <CardTitle className="text-xl font-rubik text-white">{track.title}</CardTitle>
@@ -345,7 +345,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {schedule.map((day, dayIndex) => (
-              <Card key={dayIndex} className="bg-card/50 backdrop-blur border-border/50">
+              <Card key={dayIndex} className="bg-white/90 backdrop-blur border-purple-300/50 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-rubik text-center text-white">
                     {day.date}
@@ -354,7 +354,7 @@ const Index = () => {
                 <CardContent>
                   <div className="space-y-4">
                     {day.events.map((event, eventIndex) => (
-                      <div key={eventIndex} className="flex items-start gap-4 p-3 rounded-lg bg-background/50">
+                      <div key={eventIndex} className="flex items-start gap-4 p-3 rounded-lg bg-purple-50/80">
                         <Badge variant="outline" className="text-primary border-primary/30 shrink-0">
                           {event.time}
                         </Badge>
@@ -384,7 +384,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
               {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-card/50 backdrop-blur rounded-lg border border-border/50 px-6">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white/90 backdrop-blur rounded-lg border border-purple-300/50 px-6 shadow-lg">
                   <AccordionTrigger className="text-left font-rubik font-medium hover:text-primary">
                     {item.question}
                   </AccordionTrigger>
