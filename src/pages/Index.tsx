@@ -122,10 +122,28 @@ const Index = () => {
     }
   ];
 
+  const generateParticles = () => {
+    return Array.from({ length: 50 }, (_, i) => (
+      <div
+        key={i}
+        className="particle"
+        style={{
+          left: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 15}s`,
+          animationDuration: `${15 + Math.random() * 10}s`
+        }}
+      />
+    ));
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950">
+    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950 relative floating-orbs">
+      {/* Floating Particles */}
+      <div className="particles fixed inset-0 z-0">
+        {generateParticles()}
+      </div>
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-purple-900/80 backdrop-blur-lg border-b border-purple-700/50">
+      <header className="fixed top-0 w-full z-50 bg-purple-900/80 backdrop-blur-lg border-b border-purple-700/50 relative">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -150,6 +168,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-400/15 via-violet-500/10 to-indigo-400/15"></div>
+        {/* Additional floating orbs for hero */}
+        <div className="absolute top-10 left-20 w-32 h-32 bg-gradient-radial from-neon-purple/20 to-transparent rounded-full animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-radial from-neon-pink/15 to-transparent rounded-full animate-float" style={{animationDelay: '2s'}}></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 animate-float">
