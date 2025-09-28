@@ -140,7 +140,7 @@ const Index = () => {
               <a href="#schedule" className="text-muted-foreground hover:text-primary transition-colors">Расписание</a>
               <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
             </div>
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-primary-foreground font-medium">
+            <Button className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium shadow-lg shadow-neon-purple/50 hover:shadow-neon-pink/70 transition-all duration-300">
               Регистрация
             </Button>
           </nav>
@@ -184,11 +184,11 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-primary-foreground font-medium text-lg px-8 py-3">
+              <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium text-lg px-8 py-3 shadow-xl shadow-neon-purple/50 hover:shadow-neon-pink/70 transition-all duration-300">
                 <Icon name="UserPlus" className="mr-2" />
                 Зарегистрироваться
               </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
+              <Button size="lg" variant="outline" className="border-neon-cyan/50 text-neon-cyan hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-lg hover:shadow-neon-cyan/30 transition-all duration-300">
                 <Icon name="Download" className="mr-2" />
                 Скачать положение
               </Button>
@@ -386,7 +386,7 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Регистрация открыта до 15 мая 2025 года. Количество мест ограничено!
           </p>
-          <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-primary-foreground font-medium text-lg px-8 py-3 animate-glow-pulse">
+          <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium text-lg px-8 py-3 animate-glow-pulse shadow-2xl shadow-neon-purple/60 hover:shadow-neon-pink/80 transition-all duration-300">
             <Icon name="Rocket" className="mr-2" />
             Зарегистрироваться сейчас
           </Button>
@@ -433,11 +433,11 @@ const Index = () => {
                 Международная школа программирования и математики Алгоритмика Можга
               </p>
               <div className="flex gap-2">
-                <Button size="sm" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
+                <Button size="sm" variant="outline" className="border-neon-purple/50 text-neon-purple hover:bg-neon-purple/10 hover:border-neon-purple hover:shadow-md hover:shadow-neon-purple/30 transition-all duration-300">
                   <Icon name="MessageCircle" className="mr-1" size={16} />
                   VK
                 </Button>
-                <Button size="sm" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
+                <Button size="sm" variant="outline" className="border-neon-pink/50 text-neon-pink hover:bg-neon-pink/10 hover:border-neon-pink hover:shadow-md hover:shadow-neon-pink/30 transition-all duration-300">
                   <Icon name="Globe" className="mr-1" size={16} />
                   Сайт
                 </Button>
