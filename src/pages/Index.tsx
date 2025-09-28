@@ -123,9 +123,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-card">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-violet-900 to-purple-800">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+      <header className="fixed top-0 w-full z-50 bg-purple-900/80 backdrop-blur-lg border-b border-purple-700/50">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -149,7 +149,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-violet-500/10"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 animate-float">
@@ -217,7 +217,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-card/30">
+      <section id="about" className="py-16 bg-purple-800/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -311,7 +311,7 @@ const Index = () => {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-16 bg-card/30">
+      <section id="schedule" className="py-16 bg-purple-800/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -378,7 +378,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10">
+      <section className="py-16 bg-gradient-to-r from-purple-600/20 via-violet-600/20 to-purple-500/20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Готов принять вызов?
@@ -394,7 +394,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-card border-t border-border">
+      <footer className="py-12 bg-purple-900/50 border-t border-purple-700/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
