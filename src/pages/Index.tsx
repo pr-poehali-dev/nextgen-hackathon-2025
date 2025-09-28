@@ -155,10 +155,10 @@ const Index = () => {
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 animate-float">
               Ноябрь 2025 • Можга
             </Badge>
-            <h1 className="text-6xl md:text-8xl font-rubik font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-8xl font-rubik font-bold mb-6 text-white">
               NextGen
             </h1>
-            <h2 className="text-2xl md:text-3xl font-rubik font-medium mb-6 text-muted-foreground">
+            <h2 className="text-2xl md:text-3xl font-rubik font-medium mb-6 text-white">
               Хакатон по программированию
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -220,7 +220,7 @@ const Index = () => {
       <section id="about" className="py-16 bg-purple-800/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
               О хакатоне
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -232,7 +232,7 @@ const Index = () => {
             <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-primary/30 transition-all duration-300">
               <CardHeader>
                 <Icon name="Target" className="text-primary text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik">Цели</CardTitle>
+                <CardTitle className="text-xl font-rubik text-white">Цели</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -247,7 +247,7 @@ const Index = () => {
             <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-secondary/30 transition-all duration-300">
               <CardHeader>
                 <Icon name="Award" className="text-secondary text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik">Призы</CardTitle>
+                <CardTitle className="text-xl font-rubik text-white">Призы</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -262,7 +262,7 @@ const Index = () => {
             <Card className="bg-card/50 backdrop-blur border-border/50 hover:border-accent/30 transition-all duration-300">
               <CardHeader>
                 <Icon name="Users2" className="text-accent text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik">Команды</CardTitle>
+                <CardTitle className="text-xl font-rubik text-white">Команды</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -281,7 +281,7 @@ const Index = () => {
       <section id="tracks" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
               Направления
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -294,7 +294,7 @@ const Index = () => {
               <Card key={track.id} className={`bg-card/50 backdrop-blur border-2 ${track.borderColor} hover:${track.bgColor} transition-all duration-300 group`}>
                 <CardHeader className="text-center">
                   <Icon name={track.icon as any} className={`${track.color} text-4xl mb-3 mx-auto group-hover:animate-float`} />
-                  <CardTitle className="text-xl font-rubik">{track.title}</CardTitle>
+                  <CardTitle className="text-xl font-rubik text-white">{track.title}</CardTitle>
                   <Badge variant="outline" className={`${track.color} border-current`}>
                     {track.age}
                   </Badge>
@@ -314,7 +314,7 @@ const Index = () => {
       <section id="schedule" className="py-16 bg-purple-800/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
               Расписание
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -326,7 +326,7 @@ const Index = () => {
             {schedule.map((day, dayIndex) => (
               <Card key={dayIndex} className="bg-card/50 backdrop-blur border-border/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-rubik text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  <CardTitle className="text-2xl font-rubik text-center text-white">
                     {day.date}
                   </CardTitle>
                 </CardHeader>
@@ -352,7 +352,7 @@ const Index = () => {
       <section id="faq" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
               Частые вопросы
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -380,7 +380,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-purple-600/20 via-violet-600/20 to-purple-500/20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-rubik font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
             Готов принять вызов?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
