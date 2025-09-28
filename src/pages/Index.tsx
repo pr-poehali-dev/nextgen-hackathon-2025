@@ -253,7 +253,7 @@ const Index = () => {
             <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-primary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Target" className="text-primary text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik text-white">Цели</CardTitle>
+                <CardTitle className="text-xl font-rubik text-black">Цели</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -268,7 +268,7 @@ const Index = () => {
             <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-secondary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Award" className="text-secondary text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik text-white">Призы</CardTitle>
+                <CardTitle className="text-xl font-rubik text-black">Призы</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -283,7 +283,7 @@ const Index = () => {
             <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-accent/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Users2" className="text-accent text-3xl mb-3" />
-                <CardTitle className="text-xl font-rubik text-white">Команды</CardTitle>
+                <CardTitle className="text-xl font-rubik text-black">Команды</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
@@ -315,7 +315,7 @@ const Index = () => {
               <Card key={track.id} className={`bg-white/90 backdrop-blur border-2 ${track.borderColor} hover:${track.bgColor} transition-all duration-300 group shadow-lg`}>
                 <CardHeader className="text-center">
                   <Icon name={track.icon as any} className={`${track.color} text-4xl mb-3 mx-auto group-hover:animate-float`} />
-                  <CardTitle className="text-xl font-rubik text-white">{track.title}</CardTitle>
+                  <CardTitle className="text-xl font-rubik text-black">{track.title}</CardTitle>
                   <Badge variant="outline" className={`${track.color} border-current`}>
                     {track.age}
                   </Badge>
@@ -347,7 +347,7 @@ const Index = () => {
             {schedule.map((day, dayIndex) => (
               <Card key={dayIndex} className="bg-white/90 backdrop-blur border-purple-300/50 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-rubik text-center text-white">
+                  <CardTitle className="text-2xl font-rubik text-center text-black">
                     {day.date}
                   </CardTitle>
                 </CardHeader>
