@@ -123,7 +123,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-violet-900 to-purple-800">
+    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950">
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-purple-900/80 backdrop-blur-lg border-b border-purple-700/50">
         <div className="container mx-auto px-4 py-4">
@@ -149,7 +149,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-violet-500/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-400/15 via-violet-500/10 to-indigo-400/15"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 animate-float">
@@ -217,7 +217,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-purple-800/30">
+      <section id="about" className="py-16 bg-gradient-to-r from-purple-900/40 via-violet-900/30 to-indigo-900/40">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
@@ -311,7 +311,7 @@ const Index = () => {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-16 bg-purple-800/30">
+      <section id="schedule" className="py-16 bg-gradient-to-r from-indigo-900/40 via-violet-900/30 to-purple-900/40">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
@@ -378,7 +378,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600/20 via-violet-600/20 to-purple-500/20">
+      <section className="py-16 bg-gradient-to-r from-purple-700/30 via-violet-700/25 to-indigo-700/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
             Готов принять вызов?
@@ -394,7 +394,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-purple-900/50 border-t border-purple-700/50">
+      <footer className="py-12 bg-gradient-to-r from-purple-950/80 via-violet-950/70 to-indigo-950/80 border-t border-purple-700/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
