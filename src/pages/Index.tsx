@@ -44,9 +44,9 @@ const Index = () => {
       age: '8-10 лет',
       description: 'Создание собственной игры на Scratch',
       icon: 'Gamepad2',
-      color: 'text-neon-cyan',
-      bgColor: 'bg-neon-cyan/10',
-      borderColor: 'border-neon-cyan/30'
+      color: 'text-neon-purple',
+      bgColor: 'bg-neon-purple/10',
+      borderColor: 'border-neon-purple/30'
     },
     {
       id: 'roblox',
@@ -54,9 +54,9 @@ const Index = () => {
       age: '10-12 лет', 
       description: 'Создание виртуальной игры на платформе Roblox Studio',
       icon: 'Blocks',
-      color: 'text-neon-magenta',
-      bgColor: 'bg-neon-magenta/10',
-      borderColor: 'border-neon-magenta/30'
+      color: 'text-neon-pink',
+      bgColor: 'bg-neon-pink/10',
+      borderColor: 'border-neon-pink/30'
     },
     {
       id: 'python-junior',
@@ -64,9 +64,9 @@ const Index = () => {
       age: '11-13 лет',
       description: 'Создание MVP продукта + задачи по кибербезопасности',
       icon: 'Code',
-      color: 'text-neon-green',
-      bgColor: 'bg-neon-green/10',
-      borderColor: 'border-neon-green/30'
+      color: 'text-neon-magenta',
+      bgColor: 'bg-neon-magenta/10',
+      borderColor: 'border-neon-magenta/30'
     },
     {
       id: 'python-senior',
@@ -74,9 +74,9 @@ const Index = () => {
       age: '14-17 лет',
       description: 'Создание MVP продукта + продвинутые задачи CTF',
       icon: 'Terminal',
-      color: 'text-neon-blue',
-      bgColor: 'bg-neon-blue/10',
-      borderColor: 'border-neon-blue/30'
+      color: 'text-neon-violet',
+      bgColor: 'bg-neon-violet/10',
+      borderColor: 'border-neon-violet/30'
     }
   ];
 
