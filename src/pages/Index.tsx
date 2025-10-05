@@ -44,9 +44,9 @@ const Index = () => {
       age: '8-10 лет',
       description: 'Создание собственной игры на Scratch',
       icon: 'Gamepad2',
-      color: 'text-neon-purple',
-      bgColor: 'bg-neon-purple/10',
-      borderColor: 'border-neon-purple/30'
+      color: 'text-neon-green',
+      bgColor: 'bg-neon-green/10',
+      borderColor: 'border-neon-green/30'
     },
     {
       id: 'roblox',
@@ -54,9 +54,9 @@ const Index = () => {
       age: '10-12 лет', 
       description: 'Создание виртуальной игры на платформе Roblox Studio',
       icon: 'Blocks',
-      color: 'text-neon-pink',
-      bgColor: 'bg-neon-pink/10',
-      borderColor: 'border-neon-pink/30'
+      color: 'text-neon-light',
+      bgColor: 'bg-neon-light/10',
+      borderColor: 'border-neon-light/30'
     },
     {
       id: 'python-junior',
@@ -64,9 +64,9 @@ const Index = () => {
       age: '11-13 лет',
       description: 'Создание MVP продукта + задачи по кибербезопасности',
       icon: 'Code',
-      color: 'text-neon-magenta',
-      bgColor: 'bg-neon-magenta/10',
-      borderColor: 'border-neon-magenta/30'
+      color: 'text-neon-emerald',
+      bgColor: 'bg-neon-emerald/10',
+      borderColor: 'border-neon-emerald/30'
     },
     {
       id: 'python-senior',
@@ -74,9 +74,9 @@ const Index = () => {
       age: '14-17 лет',
       description: 'Создание MVP продукта + продвинутые задачи CTF',
       icon: 'Terminal',
-      color: 'text-neon-violet',
-      bgColor: 'bg-neon-violet/10',
-      borderColor: 'border-neon-violet/30'
+      color: 'text-neon-mint',
+      bgColor: 'bg-neon-mint/10',
+      borderColor: 'border-neon-mint/30'
     }
   ];
 
@@ -137,13 +137,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-violet-950 to-indigo-950 relative floating-orbs">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative floating-orbs">
       {/* Floating Particles */}
       <div className="particles fixed inset-0 z-0">
         {generateParticles()}
       </div>
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-purple-900/80 backdrop-blur-lg border-b border-purple-700/50 relative">
+      <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-green-200/50 relative">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -158,7 +158,7 @@ const Index = () => {
               <a href="#schedule" className="text-muted-foreground hover:text-primary transition-colors">Расписание</a>
               <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
             </div>
-            <Button className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium shadow-lg shadow-neon-purple/50 hover:shadow-neon-pink/70 transition-all duration-300">
+            <Button className="bg-gradient-to-r from-neon-green to-neon-light hover:from-neon-emerald hover:to-neon-mint text-white font-medium shadow-lg shadow-neon-green/50 hover:shadow-neon-light/70 transition-all duration-300">
               Регистрация
             </Button>
           </nav>
@@ -167,19 +167,19 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-400/15 via-violet-500/10 to-indigo-400/15"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-200/15 via-emerald-300/10 to-teal-200/15"></div>
         {/* Additional floating orbs for hero */}
-        <div className="absolute top-10 left-20 w-32 h-32 bg-gradient-radial from-neon-purple/20 to-transparent rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-radial from-neon-pink/15 to-transparent rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-10 left-20 w-32 h-32 bg-gradient-radial from-neon-green/20 to-transparent rounded-full animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-radial from-neon-light/15 to-transparent rounded-full animate-float" style={{animationDelay: '2s'}}></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 animate-float">
               Ноябрь 2025 • Можга
             </Badge>
-            <h1 className="text-6xl md:text-8xl font-rubik font-bold mb-6 text-white">
+            <h1 className="text-6xl md:text-8xl font-rubik font-bold mb-6 bg-gradient-to-r from-green-700 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
               NextGen
             </h1>
-            <h2 className="text-2xl md:text-3xl font-rubik font-medium mb-6 text-white">
+            <h2 className="text-2xl md:text-3xl font-rubik font-medium mb-6 text-green-800">
               Хакатон по программированию
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -195,7 +195,7 @@ const Index = () => {
                 { value: timeLeft.minutes, label: 'минут' },
                 { value: timeLeft.seconds, label: 'секунд' }
               ].map((item, index) => (
-                <Card key={index} className="bg-white/90 backdrop-blur border-purple-300/50 shadow-lg">
+                <Card key={index} className="bg-white/90 backdrop-blur border-green-300/50 shadow-lg">
                   <CardContent className="p-4 text-center">
                     <div className="text-2xl font-rubik font-bold text-primary">{item.value}</div>
                     <div className="text-xs text-muted-foreground">{item.label}</div>
@@ -205,11 +205,11 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium text-lg px-8 py-3 shadow-xl shadow-neon-purple/50 hover:shadow-neon-pink/70 transition-all duration-300">
+              <Button size="lg" className="bg-gradient-to-r from-neon-green to-neon-light hover:from-neon-emerald hover:to-neon-mint text-white font-medium text-lg px-8 py-3 shadow-xl shadow-neon-green/50 hover:shadow-neon-light/70 transition-all duration-300">
                 <Icon name="UserPlus" className="mr-2" />
                 Зарегистрироваться
               </Button>
-              <Button size="lg" variant="outline" className="border-neon-cyan/50 text-neon-cyan hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-lg hover:shadow-neon-cyan/30 transition-all duration-300">
+              <Button size="lg" variant="outline" className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime hover:shadow-lg hover:shadow-neon-lime/30 transition-all duration-300">
                 <Icon name="Download" className="mr-2" />
                 Скачать положение
               </Button>
@@ -238,10 +238,10 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-gradient-to-r from-purple-900/40 via-violet-900/30 to-indigo-900/40">
+      <section id="about" className="py-16 bg-gradient-to-r from-green-100/40 via-emerald-100/30 to-teal-100/40">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-green-800">
               О хакатоне
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -250,7 +250,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-primary/50 transition-all duration-300 shadow-lg">
+            <Card className="bg-white/90 backdrop-blur border-green-300/50 hover:border-primary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Target" className="text-primary text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-black">Цели</CardTitle>
@@ -265,7 +265,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-secondary/50 transition-all duration-300 shadow-lg">
+            <Card className="bg-white/90 backdrop-blur border-green-300/50 hover:border-secondary/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Award" className="text-secondary text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-black">Призы</CardTitle>
@@ -280,7 +280,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/90 backdrop-blur border-purple-300/50 hover:border-accent/50 transition-all duration-300 shadow-lg">
+            <Card className="bg-white/90 backdrop-blur border-green-300/50 hover:border-accent/50 transition-all duration-300 shadow-lg">
               <CardHeader>
                 <Icon name="Users2" className="text-accent text-3xl mb-3" />
                 <CardTitle className="text-xl font-rubik text-black">Команды</CardTitle>
@@ -302,7 +302,7 @@ const Index = () => {
       <section id="tracks" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-green-800">
               Направления
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -332,10 +332,10 @@ const Index = () => {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-16 bg-gradient-to-r from-indigo-900/40 via-violet-900/30 to-purple-900/40">
+      <section id="schedule" className="py-16 bg-gradient-to-r from-teal-100/40 via-emerald-100/30 to-green-100/40">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-green-800">
               Расписание
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -345,7 +345,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {schedule.map((day, dayIndex) => (
-              <Card key={dayIndex} className="bg-white/90 backdrop-blur border-purple-300/50 shadow-lg">
+              <Card key={dayIndex} className="bg-white/90 backdrop-blur border-green-300/50 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl font-rubik text-center text-black">
                     {day.date}
@@ -354,7 +354,7 @@ const Index = () => {
                 <CardContent>
                   <div className="space-y-4">
                     {day.events.map((event, eventIndex) => (
-                      <div key={eventIndex} className="flex items-start gap-4 p-3 rounded-lg bg-purple-50/80">
+                      <div key={eventIndex} className="flex items-start gap-4 p-3 rounded-lg bg-green-50/80">
                         <Badge variant="outline" className="text-primary border-primary/30 shrink-0">
                           {event.time}
                         </Badge>
@@ -373,7 +373,7 @@ const Index = () => {
       <section id="faq" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
+            <h2 className="text-4xl font-rubik font-bold mb-4 text-green-800">
               Частые вопросы
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -384,7 +384,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
               {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white/90 backdrop-blur rounded-lg border border-purple-300/50 px-6 shadow-lg">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white/90 backdrop-blur rounded-lg border border-green-300/50 px-6 shadow-lg">
                   <AccordionTrigger className="text-left font-rubik font-medium hover:text-primary">
                     {item.question}
                   </AccordionTrigger>
@@ -399,15 +399,15 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-700/30 via-violet-700/25 to-indigo-700/30">
+      <section className="py-16 bg-gradient-to-r from-green-200/30 via-emerald-200/25 to-teal-200/30">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-rubik font-bold mb-4 text-white">
+          <h2 className="text-4xl font-rubik font-bold mb-4 text-green-800">
             Готов принять вызов?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Регистрация открыта до 15 мая 2025 года. Количество мест ограничено!
           </p>
-          <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-violet hover:to-neon-magenta text-white font-medium text-lg px-8 py-3 animate-glow-pulse shadow-2xl shadow-neon-purple/60 hover:shadow-neon-pink/80 transition-all duration-300">
+          <Button size="lg" className="bg-gradient-to-r from-neon-green to-neon-light hover:from-neon-emerald hover:to-neon-mint text-white font-medium text-lg px-8 py-3 animate-glow-pulse shadow-2xl shadow-neon-green/60 hover:shadow-neon-light/80 transition-all duration-300">
             <Icon name="Rocket" className="mr-2" />
             Зарегистрироваться сейчас
           </Button>
@@ -415,7 +415,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gradient-to-r from-purple-950/80 via-violet-950/70 to-indigo-950/80 border-t border-purple-700/50">
+      <footer className="py-12 bg-gradient-to-r from-green-100/80 via-emerald-100/70 to-teal-100/80 border-t border-green-300/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>

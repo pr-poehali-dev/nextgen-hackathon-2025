@@ -20,11 +20,11 @@ export default {
 		extend: {
 			colors: {
 				neon: {
-					purple: '#9D4EDD',
-					pink: '#E0AAFF',
-					magenta: '#FF006E',
-					violet: '#7209B7',
-					cyan: '#00F5FF'
+					green: '#10B981',
+					light: '#34D399',
+					emerald: '#059669',
+					mint: '#6EE7B7',
+					lime: '#84CC16'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
