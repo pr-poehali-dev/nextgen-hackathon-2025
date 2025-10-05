@@ -209,9 +209,9 @@ const Index = () => {
                 <Icon name="UserPlus" className="mr-2" />
                 Зарегистрироваться
               </Button>
-              <Button size="lg" variant="outline" className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime hover:shadow-lg hover:shadow-neon-lime/30 transition-all duration-300">
-                <Icon name="Download" className="mr-2" />
-                Скачать положение
+              <Button size="lg" variant="outline" className="border-neon-lime/50 text-neon-lime hover:bg-neon-lime/10 hover:border-neon-lime hover:shadow-lg hover:shadow-neon-lime/30 transition-all duration-300" onClick={() => window.location.href = '/presentation'}>
+                <Icon name="Presentation" className="mr-2" />
+                Бизнес-план
               </Button>
             </div>
 
