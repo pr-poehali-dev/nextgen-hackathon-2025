@@ -132,15 +132,15 @@ const Presentation = () => {
                 <CardContent className="p-6 space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Спонсорство</span>
-                    <span className="font-bold text-green-700">60,000 ₽</span>
+                    <span className="font-bold text-green-700">30,000 ₽</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Гранты</span>
-                    <span className="font-bold text-green-700">40,000 ₽</span>
+                    <span className="font-bold text-green-700">20,000 ₽</span>
                   </div>
                   <div className="border-t border-green-300 pt-3 flex justify-between items-center">
                     <span className="font-bold">ИТОГО</span>
-                    <span className="font-bold text-2xl text-green-700">100,000 ₽</span>
+                    <span className="font-bold text-2xl text-green-700">50,000 ₽</span>
                   </div>
                 </CardContent>
               </Card>
@@ -154,31 +154,31 @@ const Presentation = () => {
                 <CardContent className="p-6 space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Награды</span>
-                    <span className="font-semibold">50,000 ₽</span>
+                    <span className="font-semibold">25,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Оборудование</span>
-                    <span className="font-semibold">15,000 ₽</span>
+                    <span className="font-semibold">8,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Маркетинг</span>
-                    <span className="font-semibold">10,000 ₽</span>
+                    <span className="font-semibold">5,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Сертификаты</span>
-                    <span className="font-semibold">10,000 ₽</span>
+                    <span className="font-semibold">5,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Организация</span>
-                    <span className="font-semibold">10,000 ₽</span>
+                    <span className="font-semibold">5,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Резерв</span>
-                    <span className="font-semibold">5,000 ₽</span>
+                    <span className="font-semibold">2,000 ₽</span>
                   </div>
                   <div className="border-t border-orange-300 pt-2 flex justify-between items-center">
                     <span className="font-bold">ИТОГО</span>
-                    <span className="font-bold text-xl text-orange-700">100,000 ₽</span>
+                    <span className="font-bold text-xl text-orange-700">50,000 ₽</span>
                   </div>
                 </CardContent>
               </Card>
