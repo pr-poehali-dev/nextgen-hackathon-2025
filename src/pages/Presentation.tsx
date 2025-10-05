@@ -153,7 +153,7 @@ const Presentation = () => {
               <Card className="bg-orange-50 border-orange-300">
                 <CardContent className="p-6 space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Призовой фонд</span>
+                    <span className="text-muted-foreground">Награды</span>
                     <span className="font-semibold">50,000 ₽</span>
                   </div>
                   <div className="flex justify-between">
